@@ -6730,7 +6730,7 @@ will only be availible in the context of that specific routine.
 <XPD:REF name="DiagramOwner">hKqmR8ZUuk2cBbFVhNh9oQAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="T3LK/rTLc0uMFFj5fkVlngAA">
 <XPD:REF name="Diagram">Sauy3Xmy/0C9h7ZRaNfnoAAA</XPD:REF>
-<XPD:ATTR name="#OwnedViews" type="integer">24</XPD:ATTR>
+<XPD:ATTR name="#OwnedViews" type="integer">27</XPD:ATTR>
 <XPD:OBJ name="OwnedViews[0]" type="UMLClassView" guid="IB3pBKo89Ea4A86umLqB1wAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
@@ -6859,7 +6859,7 @@ will only be availible in the context of that specific routine.
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">384</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">148</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">136</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">105</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">56</XPD:ATTR>
 <XPD:REF name="Model">mbrxIsoh40CQeMHFRHMMawAA</XPD:REF>
@@ -6947,7 +6947,7 @@ will only be availible in the context of that specific routine.
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00FFFF80</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">880</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">144</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">132</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">120</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">70</XPD:ATTR>
 <XPD:REF name="Model">aDMMJ+DfrEOnmYmE8JN/UwAA</XPD:REF>
@@ -6973,7 +6973,7 @@ will only be availible in the context of that specific routine.
 <XPD:ATTR name="Left" type="integer">584</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">120</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">185</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">121</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">93</XPD:ATTR>
 <XPD:REF name="Model">37V9eDR0yESzDQor/XqTnwAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="Z+9bvGBVk0603zwgux0r9QAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="haXYouJuKkWmPpC+rmqAzwAA">
@@ -7001,7 +7001,7 @@ will only be availible in the context of that specific routine.
 <XPD:OBJ name="OwnedViews[9]" type="UMLDependencyView" guid="RC65wp2fPkqcK70pPPFVlwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">768,179;880,178</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">768,166;880,166</XPD:ATTR>
 <XPD:REF name="Model">xcm8mDcmP0SEQXJSf0OYJQAA</XPD:REF>
 <XPD:REF name="Head">IVaqygg3uEqk6h2kzUaWHAAA</XPD:REF>
 <XPD:REF name="Tail">TG0yDMBM6U+uPc8bIWLCKgAA</XPD:REF>
@@ -7027,7 +7027,7 @@ will only be availible in the context of that specific routine.
 <XPD:OBJ name="OwnedViews[10]" type="UMLDependencyView" guid="UUsOVUjJKUajmZQx04GP/AAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">584,178;488,176</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">584,165;488,164</XPD:ATTR>
 <XPD:REF name="Model">sCjE8vsvp0GNoQdPi/QHcQAA</XPD:REF>
 <XPD:REF name="Head">8/lBConY8ESPFNSEtvtd6QAA</XPD:REF>
 <XPD:REF name="Tail">TG0yDMBM6U+uPc8bIWLCKgAA</XPD:REF>
@@ -7052,7 +7052,7 @@ will only be availible in the context of that specific routine.
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[11]" type="UMLNoteView" guid="0v/uZ8qXRkePY+Fs280PVAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
-<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">clSilver</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">380</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">672</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">684</XPD:ATTR>
@@ -7237,7 +7237,7 @@ if there was a failure it will recieve a failure event and it will restore the u
 <XPD:OBJ name="OwnedViews[18]" type="UMLRealizationView" guid="SpU47w+CR0S3X8H3JVSRQgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">678,240;680,296</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">677,212;680,296</XPD:ATTR>
 <XPD:REF name="Model">xjpCCkUztUm3kDTZxo5u6AAA</XPD:REF>
 <XPD:REF name="Head">YaZEMsgd6kynd/dIRuloLQAA</XPD:REF>
 <XPD:REF name="Tail">TG0yDMBM6U+uPc8bIWLCKgAA</XPD:REF>
@@ -7394,6 +7394,49 @@ if there was a failure it will recieve a failure event and it will restore the u
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">RwJIyIK6B06IQ+irM7KwJQAA</XPD:REF>
 </XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[24]" type="UMLDependencyView" guid="TpAhlOvG20qiRDAYRWYuvAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">714,212;885,420</XPD:ATTR>
+<XPD:REF name="Model">6l1nyJ2EzUC070MWk1qpxwAA</XPD:REF>
+<XPD:REF name="Head">TDGTTdNNxk2Nn7YhYBQUoQAA</XPD:REF>
+<XPD:REF name="Tail">TG0yDMBM6U+uPc8bIWLCKgAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="pSifFHHSTE+TdxsTx2aIIQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">6l1nyJ2EzUC070MWk1qpxwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="OKcda079VEWq84Hp/XnMLgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">6l1nyJ2EzUC070MWk1qpxwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="iQgBx0RjH0KEwDD8eL6qMQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">6l1nyJ2EzUC070MWk1qpxwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[25]" type="UMLNoteView" guid="B7246P3N4kO88nVdsDtpHAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">clSilver</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">244</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">324</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">290</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">30</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">Puts the user in pendingDeletion and removes it form DB
+</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[26]" type="UMLNoteLinkView" guid="ixqNryHoUEmtwYEMN7gY4QAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">608,332;533,334</XPD:ATTR>
+<XPD:REF name="Head">B7246P3N4kO88nVdsDtpHAAA</XPD:REF>
+<XPD:REF name="Tail">YaZEMsgd6kynd/dIRuloLQAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -8740,7 +8783,7 @@ if there was a failure it will recieve a failure event and it will restore the u
 </XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:ATTR name="#OwnedElements" type="integer">75</XPD:ATTR>
+<XPD:ATTR name="#OwnedElements" type="integer">76</XPD:ATTR>
 <XPD:OBJ name="OwnedElements[0]" type="UMLClass" guid="ba7ecCVMTUWM9eVj+5C+0AAA">
 <XPD:ATTR name="Name" type="string">Routine</XPD:ATTR>
 <XPD:REF name="Namespace">hKqmR8ZUuk2cBbFVhNh9oQAA</XPD:REF>
@@ -8803,10 +8846,10 @@ if there was a failure it will recieve a failure event and it will restore the u
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[2]" type="UMLOperation" guid="i6Z+rUlAskKJ7gcy+1m41gAA">
-<XPD:ATTR name="Name" type="string">userDelete</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">deleteUser</XPD:ATTR>
 <XPD:REF name="Owner">C9jR64Cek06VnBARj83FQQAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="0m9X/VsqXUOaxpFPyrHjhgAA">
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="b2SqSAzbn0ubvfeUDd9P3AAA">
 <XPD:ATTR name="Name" type="string">String uid</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">i6Z+rUlAskKJ7gcy+1m41gAA</XPD:REF>
 </XPD:OBJ>
@@ -8824,24 +8867,25 @@ if there was a failure it will recieve a failure event and it will restore the u
 <XPD:REF name="Views[3]">rw7m09szgkqWYm2n++HShQAA</XPD:REF>
 <XPD:ATTR name="#ClientDependencies" type="integer">1</XPD:ATTR>
 <XPD:REF name="ClientDependencies[0]">Q4zkW+yL4keobN93wX4Z9gAA</XPD:REF>
-<XPD:ATTR name="#SupplierDependencies" type="integer">2</XPD:ATTR>
+<XPD:ATTR name="#SupplierDependencies" type="integer">3</XPD:ATTR>
 <XPD:REF name="SupplierDependencies[0]">dprD69j+PkWQp9+g4GPa8wAA</XPD:REF>
 <XPD:REF name="SupplierDependencies[1]">IBtHC1FdZEuO3K/az/VOpQAA</XPD:REF>
+<XPD:REF name="SupplierDependencies[2]">6l1nyJ2EzUC070MWk1qpxwAA</XPD:REF>
 <XPD:ATTR name="#Operations" type="integer">3</XPD:ATTR>
 <XPD:OBJ name="Operations[0]" type="UMLOperation" guid="j7ZA6SjS0kOuzmim7LsUuAAA">
-<XPD:ATTR name="Name" type="string">userDelete</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">deleteUser</XPD:ATTR>
 <XPD:REF name="Owner">5k2TjpxgK0+u9xY3i6dSaQAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="mbrLoi4H+EWE+/zVoW/KQwAA">
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="0eoxvfjZC0G0fmvhDdySRQAA">
 <XPD:ATTR name="Name" type="string">String uid</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">j7ZA6SjS0kOuzmim7LsUuAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[1]" type="UMLOperation" guid="hoqctF8onEOoCBT8Mp7/tgAA">
-<XPD:ATTR name="Name" type="string">userSave</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">saveUser</XPD:ATTR>
 <XPD:REF name="Owner">5k2TjpxgK0+u9xY3i6dSaQAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="D2z+lnTaG0WjUTl9sIVgrgAA">
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="O1OHirROs0mmuogMuwCtpgAA">
 <XPD:ATTR name="Name" type="string">UserEntity user</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">hoqctF8onEOoCBT8Mp7/tgAA</XPD:REF>
 </XPD:OBJ>
@@ -9144,29 +9188,20 @@ if there was a failure it will recieve a failure event and it will restore the u
 <XPD:REF name="Views[1]">JDVO8dFAakqk6XOH6wu2oQAA</XPD:REF>
 <XPD:REF name="Views[2]">97PYs6uDGEacohiRvZQ1uwAA</XPD:REF>
 <XPD:REF name="Views[3]">4RtoxFBA80Sf+4La2y6oQAAA</XPD:REF>
-<XPD:ATTR name="#ClientDependencies" type="integer">3</XPD:ATTR>
+<XPD:ATTR name="#ClientDependencies" type="integer">4</XPD:ATTR>
 <XPD:REF name="ClientDependencies[0]">xcm8mDcmP0SEQXJSf0OYJQAA</XPD:REF>
 <XPD:REF name="ClientDependencies[1]">sCjE8vsvp0GNoQdPi/QHcQAA</XPD:REF>
 <XPD:REF name="ClientDependencies[2]">xjpCCkUztUm3kDTZxo5u6AAA</XPD:REF>
+<XPD:REF name="ClientDependencies[3]">6l1nyJ2EzUC070MWk1qpxwAA</XPD:REF>
 <XPD:ATTR name="#SupplierDependencies" type="integer">1</XPD:ATTR>
 <XPD:REF name="SupplierDependencies[0]">uqHskrkETUqzm6Wm+tHBWAAA</XPD:REF>
-<XPD:ATTR name="#Operations" type="integer">3</XPD:ATTR>
-<XPD:OBJ name="Operations[0]" type="UMLOperation" guid="SLZaA/81H0GJTSRFKtzx2AAA">
-<XPD:ATTR name="Name" type="string">setUserPendingDeletion</XPD:ATTR>
-<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
-<XPD:REF name="Owner">37V9eDR0yESzDQor/XqTnwAA</XPD:REF>
-<XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="JCtUgWIkwUSTwOjcuecMEwAA">
-<XPD:ATTR name="Name" type="string">String uid</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">SLZaA/81H0GJTSRFKtzx2AAA</XPD:REF>
-</XPD:OBJ>
-</XPD:OBJ>
-<XPD:OBJ name="Operations[1]" type="UMLOperation" guid="pzbOi2ZulUKxcm3+OKsSHAAA">
+<XPD:ATTR name="#Operations" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Operations[0]" type="UMLOperation" guid="pzbOi2ZulUKxcm3+OKsSHAAA">
 <XPD:ATTR name="Name" type="string">sendUserDeleteEvent</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:REF name="Owner">37V9eDR0yESzDQor/XqTnwAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[2]" type="UMLOperation" guid="TOjZLzwelkOMc4Wz810suwAA">
+<XPD:OBJ name="Operations[1]" type="UMLOperation" guid="TOjZLzwelkOMc4Wz810suwAA">
 <XPD:ATTR name="Name" type="string">recieveRecipeDeleteEvent</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:REF name="Owner">37V9eDR0yESzDQor/XqTnwAA</XPD:REF>
@@ -9625,8 +9660,13 @@ if there was a failure it will recieve a failure event and it will restore the u
 <XPD:REF name="SupplierDependencies[1]">iJQGiayIoUG53+nDP7n9VwAA</XPD:REF>
 <XPD:ATTR name="#Operations" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="Operations[0]" type="UMLOperation" guid="zQukJPwVz0yTgyshbdbVhwAA">
-<XPD:ATTR name="Name" type="string">delete</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">deleteUser</XPD:ATTR>
 <XPD:REF name="Owner">fTqc0sStJUSgAOr0/HghrAAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="2LumhDwA2EiYXYUzVKGe0AAA">
+<XPD:ATTR name="Name" type="string">String uid</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">zQukJPwVz0yTgyshbdbVhwAA</XPD:REF>
+</XPD:OBJ>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[69]" type="UMLRealization" guid="xjpCCkUztUm3kDTZxo5u6AAA">
@@ -9690,6 +9730,16 @@ if there was a failure it will recieve a failure event and it will restore the u
 <XPD:REF name="Views[1]">qncUfQx3vUuQIYLg8AsNxAAA</XPD:REF>
 <XPD:REF name="Views[2]">MC784YCAPEeJkrL5+B4WbQAA</XPD:REF>
 <XPD:REF name="Views[3]">kVP9mFJUlkKacNt9hit7PAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[75]" type="UMLDependency" guid="6l1nyJ2EzUC070MWk1qpxwAA">
+<XPD:REF name="Namespace">hKqmR8ZUuk2cBbFVhNh9oQAA</XPD:REF>
+<XPD:REF name="Client">37V9eDR0yESzDQor/XqTnwAA</XPD:REF>
+<XPD:REF name="Supplier">5k2TjpxgK0+u9xY3i6dSaQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">TpAhlOvG20qiRDAYRWYuvAAA</XPD:REF>
+<XPD:REF name="Views[1]">pSifFHHSTE+TdxsTx2aIIQAA</XPD:REF>
+<XPD:REF name="Views[2]">OKcda079VEWq84Hp/XnMLgAA</XPD:REF>
+<XPD:REF name="Views[3]">iQgBx0RjH0KEwDD8eL6qMQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:ATTR name="#OwnedCollaborationInstanceSets" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="OwnedCollaborationInstanceSets[0]" type="UMLCollaborationInstanceSet" guid="8WPv7WgljUaaRq8tsGh/dAAA">
