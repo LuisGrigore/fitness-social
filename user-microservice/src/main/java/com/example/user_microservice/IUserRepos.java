@@ -1,4 +1,6 @@
 package com.example.user_microservice;
 
-public interface IUserRepos {
+import org.springframework.data.repository.CrudRepository;
+
+public interface IUserRepos extends CrudRepository<UserEntity,String> {
 }
