@@ -1,18 +1,17 @@
-package com.example.user_microservice;
+package com.fitness_social.common;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
+import java.io.Serializable;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class UserEntity {
-    @Id
+public class UserDeleteEvent implements Serializable {
     private String uid;
+
 }

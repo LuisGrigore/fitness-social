@@ -1,4 +1,4 @@
-package com.example.user_microservice;
+package com.fitness_social.user_microservice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

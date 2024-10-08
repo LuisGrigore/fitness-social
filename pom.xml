@@ -24,6 +24,7 @@
 		<module>eureka-server</module>
 		<module>api-gateway</module>
 		<module>user-microservice</module>
+		<module>common</module>
 	</modules>
 	<scm>
 		<connection/>

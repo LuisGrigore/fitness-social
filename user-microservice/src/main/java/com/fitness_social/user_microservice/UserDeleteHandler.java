@@ -1,5 +1,7 @@
-package com.example.user_microservice;
+package com.fitness_social.user_microservice;
 
+import com.fitness_social.common.RoutineDeleteEvent;
+import com.fitness_social.common.UserDeleteEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
@@ -19,13 +21,13 @@ public class UserDeleteHandler implements IUserDeleteHandler{
         return true;
     }
     private void sendUserDeleteEvent(){
-
+        UserDeleteEvent user = new UserDeleteEvent();
     }
-    private void recieveRecipeDeleteEvent(String uid){
-        //if fail
-        repos.save(pendingDeletion.get(uid));
-        pendingDeletion.remove(uid);
-        //if success
-        pendingDeletion.remove(uid);
+    private void recieveRecipeDeleteEvent(RoutineDeleteEvent routineDeleteEvent){
+        if(!routineDeleteEvent.isSuccess()){
+            repos.save(pendingDeletion.get(routineDeleteEvent.getUid()));
+            pendingDeletion.remove(routineDeleteEvent.getUid());
+        }
+        if(routineDeleteEvent.isSuccess()) pendingDeletion.remove(routineDeleteEvent.getUid());
     }
 }

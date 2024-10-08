@@ -1,4 +1,4 @@
-package com.example.user_microservice;
+package com.fitness_social.user_microservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
