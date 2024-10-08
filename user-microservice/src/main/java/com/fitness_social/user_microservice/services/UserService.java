@@ -1,5 +1,7 @@
-package com.fitness_social.user_microservice;
+package com.fitness_social.user_microservice.services;
 
+import com.fitness_social.user_microservice.delete_handler.IUserDeleteHandler;
+import com.fitness_social.user_microservice.repos.IUserRepos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

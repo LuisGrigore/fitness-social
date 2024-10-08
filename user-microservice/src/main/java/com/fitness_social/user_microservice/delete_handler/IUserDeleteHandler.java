@@ -1,4 +1,4 @@
-package com.fitness_social.user_microservice;
+package com.fitness_social.user_microservice.delete_handler;
 
 public interface IUserDeleteHandler {
     boolean deleteUser(String uid);

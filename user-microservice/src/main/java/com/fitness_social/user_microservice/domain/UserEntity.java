@@ -1,4 +1,4 @@
-package com.fitness_social.user_microservice;
+package com.fitness_social.user_microservice.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

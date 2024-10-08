@@ -14,4 +14,12 @@ import java.io.Serializable;
 public class RoutineDeleteEvent implements Serializable {
     private String uid;
     private boolean success;
+
+    @Override
+    public String toString() {
+        return "RoutineDeleteEvent{" +
+                "uid='" + uid + '\'' +
+                ", success=" + success +
+                '}';
+    }
 }

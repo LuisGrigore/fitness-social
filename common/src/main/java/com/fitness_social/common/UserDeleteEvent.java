@@ -14,4 +14,10 @@ import java.io.Serializable;
 public class UserDeleteEvent implements Serializable {
     private String uid;
 
+    @Override
+    public String toString() {
+        return "UserDeleteEvent{" +
+                "uid='" + uid + '\'' +
+                '}';
+    }
 }
