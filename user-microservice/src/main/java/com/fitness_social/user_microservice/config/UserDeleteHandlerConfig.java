@@ -1,6 +1,6 @@
 package com.fitness_social.user_microservice.config;
 
-import com.fitness_social.user_microservice.delete_handler.UserDeleteHandler;
+import com.fitness_social.user_microservice.delete_handler.impl.UserDeleteHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

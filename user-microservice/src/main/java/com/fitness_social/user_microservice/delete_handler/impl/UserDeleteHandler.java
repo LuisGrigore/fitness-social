@@ -1,7 +1,8 @@
-package com.fitness_social.user_microservice.delete_handler;
+package com.fitness_social.user_microservice.delete_handler.impl;
 
 import com.fitness_social.common.RoutineDeleteEvent;
 import com.fitness_social.common.UserDeleteEvent;
+import com.fitness_social.user_microservice.delete_handler.IUserDeleteHandler;
 import com.fitness_social.user_microservice.domain.UserEntity;
 import com.fitness_social.user_microservice.repos.IUserRepos;
 import org.springframework.amqp.core.Exchange;
@@ -12,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.HashMap;
 import java.util.Optional;
 
-public class UserDeleteHandler implements IUserDeleteHandler{
+public class UserDeleteHandler implements IUserDeleteHandler {
     @Autowired
     private IUserRepos repos;
     @Autowired
