@@ -1,4 +1,4 @@
-package com.fitness_social.common;
+package com.fitness_social.common.event_driven.events;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

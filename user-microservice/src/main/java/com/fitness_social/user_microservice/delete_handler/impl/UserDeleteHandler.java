@@ -1,7 +1,7 @@
 package com.fitness_social.user_microservice.delete_handler.impl;
 
-import com.fitness_social.common.RoutineDeleteEvent;
-import com.fitness_social.common.UserDeleteEvent;
+import com.fitness_social.common.event_driven.events.RoutineDeleteEvent;
+import com.fitness_social.common.event_driven.events.UserDeleteEvent;
 import com.fitness_social.user_microservice.delete_handler.IUserDeleteHandler;
 import com.fitness_social.user_microservice.domain.UserEntity;
 import com.fitness_social.user_microservice.repos.IUserRepos;
