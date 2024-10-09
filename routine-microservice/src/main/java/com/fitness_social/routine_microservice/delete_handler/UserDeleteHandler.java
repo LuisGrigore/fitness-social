@@ -1,7 +1,6 @@
 package com.fitness_social.routine_microservice.delete_handler;
 
 import com.fitness_social.common.event_driven.events.MeasurementDeleteEvent;
-import com.fitness_social.common.event_driven.events.RoutineDeleteEvent;
 import com.fitness_social.common.event_driven.events.UserDeleteEvent;
 import com.fitness_social.routine_microservice.domain.RoutineEntity;
 import com.fitness_social.routine_microservice.repos.IRoutineRepos;
@@ -28,12 +27,12 @@ public class UserDeleteHandler{
 
     @RabbitListener(queues= USER_ROUTINE_DELETE_QUEUE_NAME)
     private void recieveUserDeleteEvent(UserDeleteEvent userDeleteEvent){
-        Optional<List<RoutineEntity>> routineEntityListOptional= repos.findByUid(userDeleteEvent.getUid());
+        Optional<List<RoutineEntity>> routineEntityListOptional= repos.findByOwnerUid(userDeleteEvent.getUid());
         if(routineEntityListOptional.isPresent()){
             for(RoutineEntity routineEntity : routineEntityListOptional.get()){
                 repos.delete(routineEntity);
             }
-            pendingDeletion.put(routineEntityListOptional.get().get(0).getOwnerUid(),routineEntityListOptional.get());
+            if(!routineEntityListOptional.get().isEmpty())pendingDeletion.put(routineEntityListOptional.get().get(0).getOwnerUid(),routineEntityListOptional.get());
         }
         rabbitTemplate.convertAndSend(exchange.getName(), ROUTINE_MEASUREMENT_DELETE_QUEUE_ROUTING_KEY, userDeleteEvent);
 
