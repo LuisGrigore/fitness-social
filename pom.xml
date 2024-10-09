@@ -25,6 +25,8 @@
 		<module>api-gateway</module>
 		<module>user-microservice</module>
 		<module>routine-microservice</module>
+		<module>exercise-microservice</module>
+		<module>measurement-microservice</module>
 		<module>common</module>
 	</modules>
 	<scm>
