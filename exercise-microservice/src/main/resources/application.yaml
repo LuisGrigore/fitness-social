@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: exercise-microservice
+  config:
+    import: classpath:datasource-DEV.yaml,
+      classpath:rabbitmq-DEV.yaml
+
+server:
+  port: 8083
