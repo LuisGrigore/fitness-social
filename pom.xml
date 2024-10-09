@@ -8,7 +8,7 @@
 		<version>3.3.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.fitnes-ssocial</groupId>
+	<groupId>com.fitness-social</groupId>
 	<artifactId>fitness-social</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -24,6 +24,7 @@
 		<module>eureka-server</module>
 		<module>api-gateway</module>
 		<module>user-microservice</module>
+		<module>routine-microservice</module>
 		<module>common</module>
 	</modules>
 	<scm>
@@ -49,7 +50,6 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
 		</dependency>
 
 	</dependencies>
