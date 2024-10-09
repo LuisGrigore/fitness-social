@@ -1,16 +1,9 @@
 spring:
   application:
     name: user-microservice
-  amqp:
-    deserialization:
-      trust:
-        all: true
+  config:
+    import: classpath:datasource-DEV.yaml,
+            classpath:rabbitmq-DEV.yaml
 
-  datasource:
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
-    username: sa
-    password: password
-    platform: h2
 server:
   port: 8081
