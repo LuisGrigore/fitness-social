@@ -9,13 +9,15 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Builder
-public class UserDeleteEvent implements Serializable {
+public class MeasurementDeleteEvent implements Serializable {
     private String uid;
+    private boolean success;
 
     @Override
     public String toString() {
-        return "UserDeleteEvent{" +
+        return "MeasurementDeleteEvent{" +
                 "uid='" + uid + '\'' +
+                ", success=" + success +
                 '}';
     }
 }

@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
 import java.util.Optional;
+import static com.fitness_social.common.event_driven.events.configuration.RabbitConfiguration.*;
+
 
 public class UserDeleteHandler implements IUserDeleteHandler {
     @Autowired
@@ -27,16 +29,14 @@ public class UserDeleteHandler implements IUserDeleteHandler {
         if(posibleUser.isEmpty()) return false;
         pendingDeletion.put(posibleUser.get().getUid(),posibleUser.get());
         repos.deleteById(uid);
-        sendUserDeleteEvent();
+        sendUserDeleteEvent(uid);
         return true;
     }
-    private void sendUserDeleteEvent(){
-        UserDeleteEvent userDeleteEvent = new UserDeleteEvent();
-        RoutineDeleteEvent routineDeleteEvent = new RoutineDeleteEvent("a",true);
-        rabbitTemplate.convertAndSend(exchange.getName(), "routineDeleteQueue", routineDeleteEvent);
-        rabbitTemplate.convertAndSend(exchange.getName(), "userDeleteQueue", userDeleteEvent);
+    private void sendUserDeleteEvent(String uid){
+        UserDeleteEvent userDeleteEvent = new UserDeleteEvent(uid);
+        rabbitTemplate.convertAndSend(exchange.getName(), USER_ROUTINE_DELETE_QUEUE_ROUTING_KEY, userDeleteEvent);
     }
-    @RabbitListener(queues="routineDeleteQueue")
+    @RabbitListener(queues= ROUTINE_USER_DELETE_QUEUE_NAME)
     private void recieveRecipeDeleteEvent(RoutineDeleteEvent routineDeleteEvent){
         if(!routineDeleteEvent.isSuccess()){
             repos.save(pendingDeletion.get(routineDeleteEvent.getUid()));

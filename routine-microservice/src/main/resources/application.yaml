@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: routine-microservice
+  config:
+    import: classpath:datasource-DEV.yaml,
+      classpath:rabbitmq-DEV.yaml
+
+server:
+  port: 8082

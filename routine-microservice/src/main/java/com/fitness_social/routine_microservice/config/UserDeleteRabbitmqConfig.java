@@ -1,6 +1,9 @@
-package com.fitness_social.user_microservice.config;
+package com.fitness_social.routine_microservice.config;
 
-import org.springframework.amqp.core.*;
+import org.springframework.amqp.core.Binding;
+import org.springframework.amqp.core.BindingBuilder;
+import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.TopicExchange;
 import org.springframework.amqp.support.converter.SimpleMessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,6 +23,15 @@ public class UserDeleteRabbitmqConfig {
         return new Queue(USER_ROUTINE_DELETE_QUEUE_NAME);
     }
     @Bean
+    public Queue routineMeasurementDeleteQueue(){
+        return new Queue(ROUTINE_MEASUREMENT_DELETE_QUEUE_NAME);
+    }
+
+    @Bean
+    public Queue measurementRoutineDeleteQueue(){
+        return new Queue(MEASUREMENT_ROUTINE_DELETE_QUEUE_NAME);
+    }
+    @Bean
     public Queue routineUserDeleteQueue(){
         return new Queue(ROUTINE_USER_DELETE_QUEUE_NAME);
     }
@@ -30,6 +42,14 @@ public class UserDeleteRabbitmqConfig {
     @Bean
     public Binding routineUserDeleteBinding(TopicExchange exchange){
         return BindingBuilder.bind(routineUserDeleteQueue()).to(exchange).with(ROUTINE_USER_DELETE_QUEUE_ROUTING_KEY);
+    }
+    @Bean
+    public Binding routineMeasurementDeleteBinding(TopicExchange exchange){
+        return BindingBuilder.bind(routineMeasurementDeleteQueue()).to(exchange).with(ROUTINE_MEASUREMENT_DELETE_QUEUE_ROUTING_KEY);
+    }
+    @Bean
+    public Binding measurementRoutineDeleteBinding(TopicExchange exchange){
+        return BindingBuilder.bind(routineUserDeleteQueue()).to(exchange).with(MEASUREMENT_ROUTINE_DELETE_QUEUE_ROUTING_KEY);
     }
     @Bean
     public SimpleMessageConverter converter() {
