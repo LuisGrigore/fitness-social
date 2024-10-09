@@ -1,4 +1,4 @@
-package com.fitness_social.exercise_microservice.domain;
+package com.fitness_social.routine_microservice.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,16 +7,19 @@ import jakarta.persistence.ManyToOne;
 import lombok.*;
 
 @Entity
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 @Builder
-public class RoutineExerciseEntity {
+public class SetEntity {
     @Id
     @GeneratedValue
     private Long id;
     @ManyToOne
-    private ExerciseEntity exerciseEntity;
-    private Long routineId;
+    private RoutineEntity routine;
+    private int reps;
+    private Long exerciseId;
+    private int rest;
+
 }

@@ -1,23 +1,23 @@
 package com.fitness_social.routine_microservice.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
+@Builder
 public class RoutineEntity {
     @Id
     @GeneratedValue
     private Long id;
+    private String name;
     @Column(name = "owner_uid")
     private String ownerUid;
+    @OneToMany
+    private List<SetEntity> sets;
 }

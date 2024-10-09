@@ -15,6 +15,5 @@ import lombok.Setter;
 @Setter
 public class UserEntity {
     @Id
-    @GeneratedValue
     private String uid;
 }
