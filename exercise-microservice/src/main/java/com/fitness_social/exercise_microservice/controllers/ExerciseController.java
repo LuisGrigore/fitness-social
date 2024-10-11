@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/exercise")
+@RequestMapping("/exercises")
 public class ExerciseController {
     @Autowired
     private IExerciseService exerciseService;
