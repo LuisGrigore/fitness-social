@@ -15,6 +15,7 @@ public class RoutineEntity {
     @Id
     @GeneratedValue
     private Long id;
+    @Column
     private String name;
     @Column(name = "owner_uid")
     private String ownerUid;

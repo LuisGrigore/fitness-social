@@ -2,34 +2,45 @@ package com.fitness_social.complete_recipe_service.datasources;
 
 import com.fitness_social.complete_recipe_service.dtos.GetExerciseDto;
 import com.fitness_social.complete_recipe_service.dtos.GetRoutineDto;
+import com.fitness_social.complete_recipe_service.dtos.GetRoutinesDto;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
 public class Datasource implements IDatasource{
+    private final static String EXERCISE_MICROSERVICE_URL= "http://EXERCISE-MICROSERVICE";
+    private final static String ROUTINE_MICROSERVICE_URL= "http://ROUTINE-MICROSERVICE";
+
+    private final RestTemplate restTemplate = new RestTemplate();
     @Override
     public GetExerciseDto getExercise(Long id) {
-        return null;
+        return restTemplate.getForObject(EXERCISE_MICROSERVICE_URL, GetExerciseDto.class);
     }
 
     @Override
     public List<GetExerciseDto> getExercises(List<Long> ids) {
-        return null;
+        List<GetExerciseDto> getExerciseDtos = new ArrayList<>();
+        for(Long id : ids){
+            getExerciseDtos.add(restTemplate.getForObject(EXERCISE_MICROSERVICE_URL, GetExerciseDto.class));
+        }
+        return getExerciseDtos;
     }
 
     @Override
     public GetRoutineDto getRoutineById(Long id) {
-        return null;
+        return restTemplate.getForObject(ROUTINE_MICROSERVICE_URL, GetRoutineDto.class);
     }
 
     @Override
     public List<GetRoutineDto> getRoutinesByName(String name) {
-        return null;
+        return restTemplate.getForObject(ROUTINE_MICROSERVICE_URL, GetRoutinesDto.class).getRoutineDtos();
     }
 
     @Override
     public List<GetRoutineDto> getRoutinesByUser(String uid) {
-        return null;
+        return restTemplate.getForObject(ROUTINE_MICROSERVICE_URL, GetRoutinesDto.class).getRoutineDtos();
     }
 }

@@ -1,9 +1,6 @@
 package com.fitness_social.routine_microservice.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -18,8 +15,13 @@ public class SetEntity {
     private Long id;
     @ManyToOne
     private RoutineEntity routine;
+    @Column
     private int reps;
+    @Column
     private Long exerciseId;
+    @Column
     private int rest;
+    @Column
+    private float weight;
 
 }

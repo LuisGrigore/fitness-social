@@ -1,4 +1,4 @@
-package com.fitness_social.exercise_microservice.domain;
+package com.fitness_social.measurement_microservice.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -7,17 +7,22 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 @Entity
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 @Builder
-public class ExerciseEntity {
+public class MeasurementEntity {
     @Id
     @GeneratedValue
     private Long id;
     @Column
-    private String name;
+    private float value;
+    @Column(name = "owner_uid")
+    private String ownerUid;
     @Column
-    private String description;
+    private Unit unit;
+    @Column
+    private Type type;
+
 }
