@@ -4,6 +4,7 @@ import com.fitness_social.user_microservice.delete_handler.IUserDeleteHandler;
 import com.fitness_social.user_microservice.domain.UserEntity;
 import com.fitness_social.user_microservice.dtos.CreateUserDto;
 import com.fitness_social.user_microservice.dtos.GetUserDto;
+import com.fitness_social.user_microservice.mappers.UserMapper;
 import com.fitness_social.user_microservice.repos.IUserRepos;
 import com.fitness_social.user_microservice.services.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,8 @@ public class UserService implements IUserService {
     @Autowired
     private IUserDeleteHandler userDeleteHandler;
 
+    private final UserMapper userMapper = new UserMapper();
+
     @Override
     public boolean deleteUser(String uid) {
         return userDeleteHandler.deleteUser(uid);
@@ -26,13 +29,13 @@ public class UserService implements IUserService {
 
     @Override
     public GetUserDto createUser(CreateUserDto createUserDto) {
-        UserEntity user = userRepos.save(new UserEntity(createUserDto.getUid()));
-        return GetUserDto.builder().uid(user.getUid()).build();
+        UserEntity userEntity = userRepos.save(userMapper.createUserDtoToUserEntity(createUserDto));
+        return userMapper.UserEntityToGetUserDto(userEntity);
     }
 
     @Override
     public GetUserDto getUser(String uid) {
         Optional<UserEntity> userOptional = userRepos.findById(uid);
-        return userOptional.map(userEntity -> GetUserDto.builder().uid(userEntity.getUid()).build()).orElse(null);
+        return userOptional.map(userEntity -> userMapper.UserEntityToGetUserDto(userOptional.get())).orElse(null);
     }
 }

@@ -9,4 +9,6 @@ import lombok.*;
 @Builder
 public class GetUserDto {
     private String uid;
+    private String name;
+    private int age;
 }
