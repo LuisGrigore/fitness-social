@@ -13,7 +13,7 @@ public class SetEntity {
     @Id
     @GeneratedValue
     private Long id;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private RoutineEntity routine;
     @Column
     private int reps;

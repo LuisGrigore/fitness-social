@@ -8,7 +8,6 @@ import com.fitness_social.user_microservice.mappers.UserMapper;
 import com.fitness_social.user_microservice.repos.IUserRepos;
 import com.fitness_social.user_microservice.services.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -19,8 +18,8 @@ public class UserService implements IUserService {
     private IUserRepos userRepos;
     @Autowired
     private IUserDeleteHandler userDeleteHandler;
-
-    private final UserMapper userMapper = new UserMapper();
+    @Autowired
+    private UserMapper userMapper;
 
     @Override
     public boolean deleteUser(String uid) {

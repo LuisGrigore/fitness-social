@@ -7,7 +7,7 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-public class CreateSetDto {
+public class GetSetDto {
     private Long exerciseId;
     private int reps;
     private int rest;

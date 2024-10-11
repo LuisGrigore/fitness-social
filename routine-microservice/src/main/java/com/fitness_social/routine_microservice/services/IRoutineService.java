@@ -6,4 +6,6 @@ import org.springframework.http.ResponseEntity;
 
 public interface IRoutineService {
     GetRoutineDto createRoutine(CreateRoutineDto createRoutineDto);
+
+    boolean deleteRoutine(Long id);
 }

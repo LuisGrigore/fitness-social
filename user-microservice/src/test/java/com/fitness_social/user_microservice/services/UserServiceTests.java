@@ -4,6 +4,7 @@ import com.fitness_social.user_microservice.delete_handler.impl.UserDeleteHandle
 import com.fitness_social.user_microservice.domain.UserEntity;
 import com.fitness_social.user_microservice.dtos.CreateUserDto;
 import com.fitness_social.user_microservice.dtos.GetUserDto;
+import com.fitness_social.user_microservice.mappers.UserMapper;
 import com.fitness_social.user_microservice.repos.IUserRepos;
 import com.fitness_social.user_microservice.services.impl.UserService;
 import org.assertj.core.api.Assertions;
@@ -25,30 +26,38 @@ public class UserServiceTests {
     private IUserRepos userRepos;
     @Mock
     private UserDeleteHandler userDeleteHandler;
+    @Mock
+    private UserMapper userMapper;
     @InjectMocks
     private UserService userService;
     @Test
     public void UserService_CreateUser_ReturnsGetUserDto(){
         CreateUserDto createUserDto = new CreateUserDto();
         UserEntity userEntity = new UserEntity();
+        GetUserDto getUserDto = new GetUserDto();
 
         when(userRepos.save(Mockito.any(UserEntity.class))).thenReturn(userEntity);
+        when(userMapper.UserEntityToGetUserDto(Mockito.any(UserEntity.class))).thenReturn(getUserDto);
+        when(userMapper.createUserDtoToUserEntity(Mockito.any(CreateUserDto.class))).thenReturn(userEntity);
 
-        GetUserDto getUserDto = userService.createUser(createUserDto);
 
-        Assertions.assertThat(getUserDto).isNotNull();
+        GetUserDto getUserDtoFinal = userService.createUser(createUserDto);
+
+        Assertions.assertThat(getUserDtoFinal).isNotNull();
     }
     @Test
     public void UserService_GetUser_ReturnsGetUserDto(){
         String uid = "a";
         UserEntity userEntity = UserEntity.builder().uid(uid).build();
+        GetUserDto getUserDto = new GetUserDto();
         Optional<UserEntity> optionalUserEntity = Optional.of(userEntity);
 
         when(userRepos.findById(uid)).thenReturn(optionalUserEntity);
+        when(userMapper.UserEntityToGetUserDto(Mockito.any(UserEntity.class))).thenReturn(getUserDto);
 
-        GetUserDto getUserDto = userService.getUser(uid);
+        GetUserDto getUserDtoFinal = userService.getUser(uid);
 
-        Assertions.assertThat(getUserDto).isNotNull();
+        Assertions.assertThat(getUserDtoFinal).isNotNull();
 
     }
     @Test

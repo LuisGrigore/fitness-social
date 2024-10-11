@@ -12,5 +12,6 @@ import java.util.List;
 public class CreateRoutineDto {
     private String name;
     private String ownerUid;
+    private String description;
     private List<CreateSetDto> sets;
 }

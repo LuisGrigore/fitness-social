@@ -17,8 +17,10 @@ public class RoutineEntity {
     private Long id;
     @Column
     private String name;
+    @Column
+    private String description;
     @Column(name = "owner_uid")
     private String ownerUid;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<SetEntity> sets;
 }
