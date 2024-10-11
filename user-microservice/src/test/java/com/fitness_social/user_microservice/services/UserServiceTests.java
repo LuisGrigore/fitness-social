@@ -4,7 +4,7 @@ import com.fitness_social.user_microservice.delete_handler.impl.UserDeleteHandle
 import com.fitness_social.user_microservice.domain.UserEntity;
 import com.fitness_social.user_microservice.dtos.CreateUserDto;
 import com.fitness_social.user_microservice.dtos.GetUserDto;
-import com.fitness_social.user_microservice.mappers.UserMapper;
+import com.fitness_social.user_microservice.mappers.impl.UserMapper;
 import com.fitness_social.user_microservice.repos.IUserRepos;
 import com.fitness_social.user_microservice.services.impl.UserService;
 import org.assertj.core.api.Assertions;

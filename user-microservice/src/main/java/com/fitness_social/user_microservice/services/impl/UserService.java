@@ -4,7 +4,7 @@ import com.fitness_social.user_microservice.delete_handler.IUserDeleteHandler;
 import com.fitness_social.user_microservice.domain.UserEntity;
 import com.fitness_social.user_microservice.dtos.CreateUserDto;
 import com.fitness_social.user_microservice.dtos.GetUserDto;
-import com.fitness_social.user_microservice.mappers.UserMapper;
+import com.fitness_social.user_microservice.mappers.IUserMapper;
 import com.fitness_social.user_microservice.repos.IUserRepos;
 import com.fitness_social.user_microservice.services.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ public class UserService implements IUserService {
     @Autowired
     private IUserDeleteHandler userDeleteHandler;
     @Autowired
-    private UserMapper userMapper;
+    private IUserMapper userMapper;
 
     @Override
     public boolean deleteUser(String uid) {

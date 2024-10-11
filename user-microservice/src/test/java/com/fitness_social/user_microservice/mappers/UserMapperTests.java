@@ -3,6 +3,7 @@ package com.fitness_social.user_microservice.mappers;
 import com.fitness_social.user_microservice.domain.UserEntity;
 import com.fitness_social.user_microservice.dtos.CreateUserDto;
 import com.fitness_social.user_microservice.dtos.GetUserDto;
+import com.fitness_social.user_microservice.mappers.impl.UserMapper;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 

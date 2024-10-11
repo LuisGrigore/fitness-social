@@ -3,6 +3,7 @@ package com.fitness_social.routine_microservice.mappers;
 import com.fitness_social.routine_microservice.domain.RoutineEntity;
 import com.fitness_social.routine_microservice.dtos.CreateRoutineDto;
 import com.fitness_social.routine_microservice.dtos.CreateSetDto;
+import com.fitness_social.routine_microservice.mappers.impl.RoutineMapper;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
