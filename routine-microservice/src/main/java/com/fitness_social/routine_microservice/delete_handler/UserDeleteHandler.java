@@ -23,7 +23,7 @@ public class UserDeleteHandler{
     private RabbitTemplate rabbitTemplate;
     @Autowired
     private Exchange exchange;
-    private HashMap<String, List<RoutineEntity>> pendingDeletion = new HashMap<>();
+    private final HashMap<String, List<RoutineEntity>> pendingDeletion = new HashMap<>();
 
     @RabbitListener(queues= USER_ROUTINE_DELETE_QUEUE_NAME)
     private void recieveUserDeleteEvent(UserDeleteEvent userDeleteEvent){
