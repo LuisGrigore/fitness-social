@@ -28,16 +28,19 @@ public class RoutineMapper implements IRoutineMapper {
         if(createSetDtos == null || createSetDtos.isEmpty()) return null;
         List<SetEntity> setEntities = new ArrayList<>();
         for(CreateSetDto createSetDto : createSetDtos){
-            SetEntity setEntity = SetEntity.builder()
-                    .rest(createSetDto.getRest())
-                    .reps(createSetDto.getReps())
-                    .exerciseId(createSetDto.getExerciseId())
-                    .build();
-            setEntities.add(setEntity);
+            setEntities.add(getSetEntityFromCreateSetDto(createSetDto));
         }
         return setEntities;
     }
-    @Override
+    private SetEntity getSetEntityFromCreateSetDto(CreateSetDto createSetDto) {
+        return SetEntity.builder()
+                .rest(createSetDto.getRest())
+                .reps(createSetDto.getReps())
+                .exerciseId(createSetDto.getExerciseId())
+                .build();
+    }
+
+        @Override
     public GetRoutineDto routineEntityToGetRoutineDto(RoutineEntity routineEntity){
             return GetRoutineDto.builder()
                     .name(routineEntity.getName())
@@ -49,13 +52,15 @@ public class RoutineMapper implements IRoutineMapper {
         if(setEntities == null || setEntities.isEmpty()) return null;
         List<GetSetDto> setDtos = new ArrayList<>();
         for(SetEntity setEntity : setEntities){
-            GetSetDto getSetDto = GetSetDto.builder()
-                    .rest(setEntity.getRest())
-                    .reps(setEntity.getReps())
-                    .exerciseId(setEntity.getExerciseId())
-                    .build();
-            setDtos.add(getSetDto);
+            setDtos.add(getSetDtoFromSetEntity(setEntity));
         }
         return setDtos;
+    }
+    private GetSetDto getSetDtoFromSetEntity(SetEntity setEntity){
+        return GetSetDto.builder()
+                .rest(setEntity.getRest())
+                .reps(setEntity.getReps())
+                .exerciseId(setEntity.getExerciseId())
+                .build();
     }
 }
