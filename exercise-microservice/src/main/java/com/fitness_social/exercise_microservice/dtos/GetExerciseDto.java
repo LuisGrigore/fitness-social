@@ -9,4 +9,6 @@ import lombok.*;
 @Builder
 public class GetExerciseDto {
     private Long id;
+    private String name;
+    private String description;
 }

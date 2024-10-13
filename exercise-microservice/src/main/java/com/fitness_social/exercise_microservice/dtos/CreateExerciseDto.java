@@ -9,4 +9,5 @@ import lombok.*;
 @Builder
 public class CreateExerciseDto {
     private String name;
+    private String description;
 }
