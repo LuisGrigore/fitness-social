@@ -15,6 +15,7 @@ public class CRoutineService implements IService{
     @Override
     public GetCompleateRoutineDto getRecipeById(Long id) {
         GetRoutineDto routineDto = datasource.getRoutineById(id);
+        if(routineDto == null) return null;
         List<GetExerciseDto> completeExercises = datasource.getExercises(getExercisesFromRoutine(routineDto));
         return getCompleateRoutineDto(routineDto,completeExercises);
     }

@@ -2,6 +2,7 @@ package com.fitness_social.complete_recipe_service.dtos;
 
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -11,5 +12,5 @@ import java.util.List;
 @Builder
 public class GetRoutineDto {
     private String name;
-    private List<SetDto> setDtoList;
+    private List<SetDto> setDtoList = new ArrayList<>();
 }
