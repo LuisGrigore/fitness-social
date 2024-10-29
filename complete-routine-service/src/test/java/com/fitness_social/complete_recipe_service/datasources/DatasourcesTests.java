@@ -47,8 +47,8 @@ public class DatasourcesTests {
     }
     @Test
     public void Datasource_GetExercises_ReturnsNull(){
-        List<GetExerciseDto> getExerciseDtos = datasource.getExercises(new ArrayList<>());
         when(restTemplate.getForObject(Mockito.any(String.class),eq(GetExerciseDto.class))).thenReturn(null);
+        List<GetExerciseDto> getExerciseDtos = datasource.getExercises(new ArrayList<>());
         Assertions.assertThat(getExerciseDtos).isNull();
     }
 }
