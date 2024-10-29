@@ -29,6 +29,7 @@ public class Datasource implements IDatasource{
             GetExerciseDto getExerciseDto = restTemplate.getForObject(EXERCISE_MICROSERVICE_URL, GetExerciseDto.class);
             if(getExerciseDto != null) getExerciseDtos.add(getExerciseDto);
         }
+        if(getExerciseDtos.isEmpty()) return null;
         return getExerciseDtos;
     }
 
