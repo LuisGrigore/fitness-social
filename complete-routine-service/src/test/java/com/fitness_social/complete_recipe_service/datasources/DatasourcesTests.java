@@ -32,9 +32,23 @@ public class DatasourcesTests {
         Assertions.assertThat(getExerciseDto).isNotNull();
     }
     @Test
+    public void Datasource_GetExercise_ReturnsNull(){
+        when(restTemplate.getForObject(Mockito.any(String.class),eq(GetExerciseDto.class))).thenReturn(null);
+
+        GetExerciseDto getExerciseDto = datasource.getExercise(0L);
+
+        Assertions.assertThat(getExerciseDto).isNull();
+    }
+    @Test
     public void Datasource_GetExercises_ReturnsGetExerciseDtos(){
-        List<GetExerciseDto> getExerciseDtos = datasource.getExercises(new ArrayList<Long>());
+        List<GetExerciseDto> getExerciseDtos = datasource.getExercises(new ArrayList<>());
 
         Assertions.assertThat(getExerciseDtos).isNotNull();
+    }
+    @Test
+    public void Datasource_GetExercises_ReturnsNull(){
+        List<GetExerciseDto> getExerciseDtos = datasource.getExercises(new ArrayList<>());
+        when(restTemplate.getForObject(Mockito.any(String.class),eq(GetExerciseDto.class))).thenReturn(null);
+        Assertions.assertThat(getExerciseDtos).isNull();
     }
 }

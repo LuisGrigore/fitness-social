@@ -27,7 +27,7 @@
 		<module>routine-microservice</module>
 		<module>exercise-microservice</module>
 		<module>measurement-microservice</module>
-		<module>complete-recipe-service</module>
+		<module>complete-routine-service</module>
 		<module>common</module>
 	</modules>
 	<scm>
